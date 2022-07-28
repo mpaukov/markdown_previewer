@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mpaukov/markdown_previewer/static/css/main.e6c13ad2.css",
+    "main.js": "/mpaukov/markdown_previewer/static/js/main.c4d2c783.js",
+    "index.html": "/mpaukov/markdown_previewer/index.html",
+    "main.e6c13ad2.css.map": "/mpaukov/markdown_previewer/static/css/main.e6c13ad2.css.map",
+    "main.c4d2c783.js.map": "/mpaukov/markdown_previewer/static/js/main.c4d2c783.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.c4d2c783.js"
+  ]
+}
