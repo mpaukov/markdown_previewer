@@ -6,7 +6,8 @@ import { readFile } from "./utils/readFile";
 
 function App() {
   const [input, setInput] = useState("");
-  const [sizeEditor, setSize] = useState(false);
+  const [sizeEditor, setSizeEditor] = useState(false);
+  const [sizePreviewer, setSizePreviewer] = useState(false);
 
   useEffect(() => {
     readFile().then((r) => setInput(r));
@@ -17,18 +18,30 @@ function App() {
   };
 
   const toggleSizeEditor = () => {
-    setSize((state) => !state);
+    setSizeEditor((state) => !state);
+  };
+
+  const toggleSizePreviewer = () => {
+    setSizePreviewer((state) => !state);
   };
 
   return (
     <Container>
-      <Editor
-        input={input}
-        onChange={handleChange}
-        size={sizeEditor}
-        onSize={toggleSizeEditor}
-      />
-      {!sizeEditor && <Previewer />}
+      {!sizePreviewer && (
+        <Editor
+          input={input}
+          onChange={handleChange}
+          size={sizeEditor}
+          onSize={toggleSizeEditor}
+        />
+      )}
+      {!sizeEditor && (
+        <Previewer
+          input={input}
+          size={sizePreviewer}
+          onSize={toggleSizePreviewer}
+        />
+      )}
     </Container>
   );
 }

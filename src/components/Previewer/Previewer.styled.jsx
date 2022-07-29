@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export const EditorWrapper = styled.div`
+export const PreviewerWrapper = styled.div`
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 480px;
+  width: 640px;
   min-height: 240px;
 `;
 
@@ -42,10 +42,13 @@ export const Button = styled.button`
   border: none;
 `;
 
-export const TextArea = styled.textarea`
+export const TextArea = styled.div`
   width: 100%;
-  height: ${({ sz }) => (sz ? "80vh" : "320px")};
-  resize: vertical;
+  min-height: ${({ sz }) => (sz ? "80vh" : "320px")};
   padding: 24px;
   background-color: #b0c3f7;
+
+  img {
+    width: 100%;
+  }
 `;
