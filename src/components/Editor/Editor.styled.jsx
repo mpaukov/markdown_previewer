@@ -2,7 +2,10 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const EditorWrapper = styled.div`
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
   width: 480px;
   min-height: 240px;
 `;

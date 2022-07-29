@@ -2,7 +2,7 @@
   "name": "markdown_previewer",
   "version": "0.1.0",
   "description": "Markdown Previewer",
-  "homepage": "https://github.com/mpaukov/markdown_previewer",
+  "homepage": "https://mpaukov.github.io/markdown_previewer/",
   "main": "index.js",
   "private": true,
   "author": "Michael.Paukov@gmail.com",
